@@ -30,20 +30,38 @@
 // 14JUL 2022 Lesson: Components
 // Part 1: Components in single page
 
-import React from "react";
-import ReactDOM  from "react-dom";
-import Header from "./Components/Header";
-import Body from "./Components/Body";
-import Footer from "./Components/Footer";
+// import React from "react";
+// import ReactDOM  from "react-dom";
+// import Header from "./Components/Header";
+// import Body from "./Components/Body";
+// import Footer from "./Components/Footer";
 
-function CustomPage() {
-  return (
+// function CustomPage() {
+//   return (
+//     <div>
+//       <Header />
+//       <Body />
+//       <Footer />
+//     </div>
+//   )
+// };
+
+// ReactDOM.render(< CustomPage/>, document.getElementById("root"));
+
+// Project 1
+import React from "react";
+import ReactDOM from "react-dom";
+import NavBar from "./Components/RIANavBar";
+import Main from "./Components/RIAMain";
+
+
+function Page(){
+  return(
     <div>
-      <Header />
-      <Body />
-      <Footer />
+    <NavBar />
+    <Main />
     </div>
   )
 };
 
-ReactDOM.render(< CustomPage/>, document.getElementById("root"));
+ReactDOM.render(<Page />, document.getElementById("root"));
