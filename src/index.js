@@ -32,9 +32,9 @@
 
 import React from "react";
 import ReactDOM  from "react-dom";
-import Header from "./Header";
-import Body from "./Body";
-import Footer from "./Footer";
+import Header from "./Components/Header";
+import Body from "./Components/Body";
+import Footer from "./Components/Footer";
 
 function CustomPage() {
   return (
