@@ -32,36 +32,9 @@
 
 import React from "react";
 import ReactDOM  from "react-dom";
-
-function Header(){
-  return(
-    <header>
-      <nav>
-        <img src="/logo512.png" width="40px"></img>
-      </nav>
-    </header>
-  )
-};
-
-function Body(){
-  return(
-    <div>
-      <h1>Reasons why I am excited about learning about React</h1>
-      <ol>
-        <li>Additional skill/tech stack</li>
-        <li>Hirable skill</li>
-      </ol>
-    </div>
-  )
-};
-
-function Footer(){
-  return(
-    <footer>
-      <small>Copyright 2022 Arce development. All rights reserved.</small>
-    </footer>
-  )
-};
+import Header from "./Header";
+import Body from "./Body";
+import Footer from "./Footer";
 
 function CustomPage() {
   return (
