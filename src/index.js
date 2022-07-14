@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-// import logo from './assets/images/logo192.png';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+
 
 // create assets folder inside src
 //under src/assets create images and styles folder
@@ -9,20 +9,68 @@ import ReactDOM from 'react-dom';
 //  https://stackoverflow.com/questions/37644265/correct-path-for-img-on-react-js
 // render image from public folder: https://stackoverflow.com/questions/47196800/reactjs-and-images-in-public-folder
 
-const page = (
-      <div>
-        <img src='/logo512.png' width='40px'></img>
-        <h1>Fun facts about React</h1>
-        <ul>
-            <li>First released in 2013</li>
-            <li>Originally created by Jordan Walke</li>
-            <li>Has well over 100K stars on Github</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-      </div>
-);
-const root = document.getElementById('root');
-console.log(page);
+// const page = (
+//       <div>
+//         <img src='/logo512.png' width='40px'></img>
+//         <h1>Fun facts about React</h1>
+//         <ul>
+//             <li>First released in 2013</li>
+//             <li>Originally created by Jordan Walke</li>
+//             <li>Has well over 100K stars on Github</li>
+//             <li>Is maintained by Facebook</li>
+//             <li>Powers thousands of enterprise apps, including mobile apps</li>
+//         </ul>
+//       </div>
+// );
+// const root = document.getElementById('root');
+// console.log(page);
 
-ReactDOM.render(page, root);
+// ReactDOM.render(page, root);
+
+// 14JUL 2022 Lesson: Components
+// Part 1: Components in single page
+
+import React from "react";
+import ReactDOM  from "react-dom";
+
+function Header(){
+  return(
+    <header>
+      <nav>
+        <img src="/logo512.png" width="40px"></img>
+      </nav>
+    </header>
+  )
+};
+
+function Body(){
+  return(
+    <div>
+      <h1>Reasons why I am excited about learning about React</h1>
+      <ol>
+        <li>Additional skill/tech stack</li>
+        <li>Hirable skill</li>
+      </ol>
+    </div>
+  )
+};
+
+function Footer(){
+  return(
+    <footer>
+      <small>Copyright 2022 Arce development. All rights reserved.</small>
+    </footer>
+  )
+};
+
+function CustomPage() {
+  return (
+    <div>
+      <Header />
+      <Body />
+      <Footer />
+    </div>
+  )
+};
+
+ReactDOM.render(< CustomPage/>, document.getElementById("root"));
