@@ -49,19 +49,41 @@
 // ReactDOM.render(< CustomPage/>, document.getElementById("root"));
 
 // Project 1
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import NavBar from "./Components/RIANavBar";
+// import Main from "./Components/RIAMain";
+
+
+// function Page(){
+//   return(
+//     <div>
+//     <NavBar />
+//     <Main />
+//     </div>
+//   )
+// };
+
+// ReactDOM.render(<Page />, document.getElementById("root"));
+
+// Solo Project
 import React from "react";
 import ReactDOM from "react-dom";
-import NavBar from "./Components/RIANavBar";
-import Main from "./Components/RIAMain";
+import Info from "./Components/SPInfo";
+import About from "./Components/SPAbout";
+import Interest from "./Components/SPInterest";
+import Footer from "./Components/SPFooter";
+import style from "./assets/styles/global_css.css";
 
-
-function Page(){
+function DigitalCard(){
   return(
     <div>
-    <NavBar />
-    <Main />
+      <Info />
+      <About />
+      <Interest />
+      <Footer />
     </div>
   )
-};
+}
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render( <DigitalCard />, document.getElementById("root"));
