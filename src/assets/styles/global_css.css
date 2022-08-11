@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border-style: dotted;
+  /* border-style: dotted; */
 }
 
 body {
@@ -77,6 +77,14 @@ main {
   font-size: 1.4rem; */
 /* } */
 
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 868px;
+  left: 0%;
+  background: #23252C;
+}
+
 .main--photo {
   position: absolute;
   left: 116px;
@@ -86,10 +94,19 @@ main {
   border-radius: 10px 10px 0px 0px;
 }
 
+.main--body {
+  position: absolute;
+  width: 317px;
+  height: 399px;
+  left: 116px;
+  top: 350px;
+  background: #F5F5F5;
+}
+
 .main--name {
   position: absolute;
-  left: 186px;
-  top: 381px;
+  left: 65px;
+  top: 5px;
   height: 26px;
   width: 178px;
   font-weight: 700;
@@ -101,8 +118,8 @@ main {
 
 .main--role {
   position: absolute;
-  left: 186px;
-  top: 413px;
+  left: 65px;
+  top: 50px; /*add 7px between the name and role*/
   height: 15px;
   width: 178px;
   font-weight: 400;
@@ -110,4 +127,113 @@ main {
   line-height: 15px;
   text-align: center;
   color: #F47D27;
+}
+
+/* button */
+.main--email {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 13px 9px 11px;
+  position: absolute;
+  width: 247px;
+  height: 34px;
+  left: 35px;
+  top: 100px;
+  background: #FFFFFF;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.about--title {
+  position: absolute;
+  width: 243px;
+  height: 21px;
+  left: 35px;
+  top: 150px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2b283a;
+}
+
+.about--description {
+  position: absolute;
+  width: 247px;
+  height: 61px;
+  left: 35px;
+  top: 180px;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #4a4e74;
+}
+
+.interest--title {
+  position: absolute;
+  width: 243px;
+  height: 21px;
+  left: 35px;
+  top: 250px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2b283a;
+}
+
+.interest--description {
+  position: absolute;
+  width: 247px;
+  height: 61px;
+  left: 35px;
+  top: 280px;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #4a4e74;
+}
+
+.footer {
+  position: absolute;
+  width: 317px;
+  height: 64px;
+  left: 116px;
+  top:748px;
+  background: #d5d4d8;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.twitter {
+  position: absolute;
+  left: 15%;
+  right: 85%;
+  top: 25%;
+  bottom: 25%;
+}
+
+.fb {
+  position: absolute;
+  left: 35%;
+  right: 65%;
+  top: 25%;
+  bottom: 25%;
+}
+
+.instagram {
+  position: absolute;
+  left: 55%;
+  right: 45%;
+  top: 25%;
+  bottom: 25%;
+}
+
+.linkedin {
+  position: absolute;
+  left: 75%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
 }

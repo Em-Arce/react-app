@@ -69,18 +69,23 @@
 // Solo Project
 import React from "react";
 import ReactDOM from "react-dom";
+import ShowImage from "./Components/SPImage";
 import Info from "./Components/SPInfo";
 import About from "./Components/SPAbout";
 import Interest from "./Components/SPInterest";
 import Footer from "./Components/SPFooter";
 import style from "./assets/styles/global_css.css";
 
+
 function DigitalCard(){
   return(
-    <div>
-      <Info />
-      <About />
-      <Interest />
+    <div className="container">
+      <ShowImage />
+      <div className="main--body">
+        <Info />
+        <About />
+        <Interest />
+      </div>
       <Footer />
     </div>
   )
